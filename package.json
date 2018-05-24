@@ -1,0 +1,11 @@
+{
+  "name": "laxative",
+  "version": "1.0.0",
+  "description": "Simple parallax for your web sites.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mike Bonds",
+  "license": "MIT"
+}
