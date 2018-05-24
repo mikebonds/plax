@@ -43,12 +43,22 @@ class ParticleMap {
         this._particle_map.forEach((particle) => {
             particle.el.css({
                 margin: 0,
-            })
+            });
         });
     }
 
-    decompose() {
-        // Remove particle data and reset to original
+    decompose(shouldRevert = false) {
+        // If shouldRevert is true, we replace every particle element with it's
+        // original before it became a particle object.
+        // This is very much destructive.
+        if (shouldRevert) {
+            this._particle_map.forEach((particle) => {
+                particle.el.el.parentNode.replaceChild(particle.original, particle.el.el);
+            });
+        }
+
+        this._particle_map = [];
+        this._particles = [];
     }
 
     move(scrollAmount = 0) {

@@ -46,8 +46,9 @@ class Laxative {
         this._config.scrollTarget.addEventListener(`scroll`, this.onScroll);
     }
 
-    dump() {
-        
+    dump(shouldRevert) {
+        this._config.scrollTarget.removeEventListener(`scroll`, this.onScroll);
+        this._particles.decompose(shouldRevert);
     }
 
     onScroll(event) {

@@ -27,5 +27,5 @@ for (let i = 0; i < 200; i++) {
     container.append(div)
 }
 
-const lax = new Laxative('.lax');
+window.lax = new Laxative('.lax');
 lax.start();
