@@ -1,2 +1,4 @@
 /.cache
-/dist
+/dist/LaxativeJS.*.js
+/dist/LaxativeJS.*.map
+/dist/index.html
