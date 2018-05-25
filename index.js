@@ -10,8 +10,7 @@ const body = Element(document.querySelector('body'));
 
 
 for (let i = 0; i < 200; i++) {
-    const div = Element('div').addClass('dot');
-    div.addClass('lax');
+    const div = Element('div').addClass('dot, lax');
     const size = random(5, 100);
 
     div.css({

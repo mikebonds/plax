@@ -18,6 +18,10 @@ const rect = (element) => {
     return element.getBoundingClientRect();
 };
 
+const splitClassNames = (classNames) => {
+    return classNames.replace(/\s/g, '').split(',');
+};
+
 const sizeStore = {};
 
 class CreateElement {
@@ -80,13 +84,13 @@ class CreateElement {
         }
     }
 
-    addClass(className) {
-        this.el.classList.add(className);
+    addClass(classNames) {
+        this.el.classList.add(...splitClassNames(classNames));
         return this;
     }
 
-    removeClass(className) {
-        this.el.classList.remove(className);
+    removeClass(classNames) {
+        this.el.classList.remove(...splitClassNames(classNames));
         return this;
     }
 
