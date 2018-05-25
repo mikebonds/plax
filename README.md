@@ -8,7 +8,7 @@ I'm currently using https://parceljs.org/ to work locally.
 
 ### Production Use
 It can certainly be used for pruction, but it's still a work in progress.
-Once ready, a NPM package will be released as well as a nice script that can be dropped into your sites.
+Once ready, an NPM package will be released as well as a nice script that can be dropped into your sites.
 
 
 ### What's in a name
