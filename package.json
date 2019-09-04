@@ -1,11 +1,29 @@
 {
-  "name": "laxative",
+  "name": "plax",
   "version": "1.0.0",
-  "description": "Simple parallax for your web sites.",
+  "description": "Simple paralax for your sites and apps",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Mike Bonds",
-  "license": "MIT"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikebonds/plax.git"
+  },
+  "keywords": [
+    "paralax"
+  ],
+  "author": "Mike Bonds <mikebondsdev@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mikebonds/plax/issues"
+  },
+  "homepage": "https://github.com/mikebonds/plax#readme",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7"
+  }
 }
