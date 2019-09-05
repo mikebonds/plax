@@ -1,4 +1,4 @@
-import { Element } from './Element';
+import { Element } from 'ellyjs';
 
 const selectParticles = (selector) => {
     return document.querySelectorAll(selector);

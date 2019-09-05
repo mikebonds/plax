@@ -2,27 +2,27 @@ import { bind } from 'toolpouchjs';
 import { Element } from 'ellyjs';
 import ParticleMap from './ParticleMap';
 
-let laxative_count = 0;
+let plax_count = 0;
 
 const defaultConfig = {
     scrollTarget: window,
     defaultSpeed: 1,
 };
 
-const configureLaxative = (config) => {
+const configurePlax = (config) => {
     const _config = Object.assign({}, defaultConfig, config);
-    const lax_config = {}
+    const plax_config = {}
 
     for (let prop in _config) {
-        lax_config[prop] = _config[prop];
+        plax_config[prop] = _config[prop];
     }
 
-    return lax_config;
+    return plax_config;
 };
 
 const createCSS = () => {
     const css = `
-        .laxative {
+        .plax {
             position: fixed;
             transition: transform 2s cubic-bezier(0.11, 0.87, 0.13, 0.97);
         }
@@ -31,10 +31,10 @@ const createCSS = () => {
     Element('style').text(css).appendTo(document.head);
 };
 
-class Laxative {
+class Plax {
     constructor(selector, config = {}) {
-        this._id = `laxative_${ ++laxative_count }`;
-        this._config = configureLaxative(config);
+        this._id = `plax_${ ++plax_count }`;
+        this._config = configurePlax(config);
         this._particles = new ParticleMap(selector, this._config.scrollTarget.scrollY);
         this._scrollY = 0;
 
@@ -51,10 +51,10 @@ class Laxative {
         this._particles.decompose(shouldRevert);
     }
 
-    onScroll(event) {
+    onScroll() {
         this._scrollY = this._config.scrollTarget.scrollY;
         this._particles.move(this._scrollY);
     }
 }
 
-export default Laxative;
+export default Plax;
