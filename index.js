@@ -1,5 +1,5 @@
-import Laxative from './src/Laxative';
+import Plax from './src/plax';
 
 export {
-    Laxative
+    Plax
 };
