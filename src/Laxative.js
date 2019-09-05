@@ -1,6 +1,6 @@
+import { bind } from 'toolpouchjs';
+import { Element } from 'ellyjs';
 import ParticleMap from './ParticleMap';
-import { bind } from './tools';
-import { Element } from './Element';
 
 let laxative_count = 0;
 

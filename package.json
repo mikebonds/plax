@@ -19,11 +19,7 @@
     "url": "https://github.com/mikebonds/plax/issues"
   },
   "homepage": "https://github.com/mikebonds/plax#readme",
-  "devDependencies": {
-    "@babel/core": "^7.5.5",
-    "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
-    "webpack": "^4.39.3",
-    "webpack-cli": "^3.3.7"
+  "dependencies": {
+    "ellyjs": "^1.0.0"
   }
 }
